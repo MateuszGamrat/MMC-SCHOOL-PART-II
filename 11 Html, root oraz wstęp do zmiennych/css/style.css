@@ -1,0 +1,56 @@
+:root{
+    --main-color: gold;
+    --main-color-second:green;
+    --new-widt: 500px;
+}
+
+html {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 100vh;
+	background-color: #333;
+	font-family: sans-serif;
+}
+
+.box {
+	margin: 20px auto;
+	width:var(--new-widt);
+	height: 60px;
+	border: 3px solid black;
+	border-radius: 25px;
+}
+
+.color1 {
+	background-color: var(--main-color);
+}
+
+.color2 {
+	background-color: var(--main-color-second);
+}
+
+.color3 {
+	background-color: var(--main-color);
+}
+
+.color4 {
+	background-color: var(--main-color-second);
+}
+
+.color5 {
+	background-color: var(--main-color);
+}
+
+.color6 {
+	background-color: var(--main-color-second);
+}
+
+.color7 {
+	background-color: var(--main-color);
+}
+
+.color8 {
+	background-color: var(--main-color-second);
+}
+/*# sourceMappingURL=style.css.map */
