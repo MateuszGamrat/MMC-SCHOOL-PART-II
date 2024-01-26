@@ -1,0 +1,49 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #333;
+  font-family: sans-serif;
+}
+
+.box {
+  margin: 20px auto;
+  width: 50%;
+  height: 60px;
+  border: 3px solid black;
+  border-radius: 25px;
+}
+
+.color1 {
+  background-color: tomato;
+}
+
+.color2 {
+  background-color: rgb(184, 171, 60);
+}
+
+.color3 {
+  background-color: tomato;
+}
+
+.color4 {
+  background-color: rgb(184, 171, 60);
+}
+
+.color5 {
+  background-color: tomato;
+}
+
+.color6 {
+  background-color: rgb(184, 171, 60);
+}
+
+.color7 {
+  background-color: tomato;
+}
+
+.color8 {
+  background-color: rgb(184, 171, 60);
+}/*# sourceMappingURL=style.css.map */
