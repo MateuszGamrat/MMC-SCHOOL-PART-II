@@ -1,0 +1,30 @@
+$width-cube:250px;
+$height-cube:250px;
+
+$red-cube:red;
+$green-cube:limegreen;
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 100vh;
+	background-color: #333;
+	font-family: sans-serif;
+}
+
+.cube{
+	width:$width-cube;
+	height:$height-cube;
+	background-color: #fff;
+	margin:10px
+}
+
+.red{
+	background-color: $red-cube;
+}
+
+.green{
+background-color: $green-cube;
+}
