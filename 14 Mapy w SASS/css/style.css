@@ -1,0 +1,39 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #333;
+  font-family: sans-serif;
+}
+
+.square {
+  margin: 50px;
+  width: 200px;
+  height: 200px;
+  border: 5px solid black;
+}
+
+.item1 {
+  background-color: lime;
+}
+
+.item2 {
+  background-color: gold;
+}
+
+.item3 {
+  background-color: tomato;
+}
+
+.item4 {
+  background-color: rgb(27, 124, 27);
+}
+
+.item5 {
+  background-color: rgb(167, 142, 1);
+}
+
+.item6 {
+  background-color: rgb(177, 65, 45);
+}/*# sourceMappingURL=style.css.map */
