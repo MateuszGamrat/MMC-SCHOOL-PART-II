@@ -1,0 +1,41 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+
+body {
+
+	background-color: #333;
+	font-family: sans-serif;
+}
+
+@mixin addons{
+	border-radius: 25px;
+	background-color: gold;
+}
+@mixin color($bg-color){
+	background-color: $bg-color;
+}
+
+@mixin size($size){
+	height: $size;
+	width:$size;
+}
+
+
+.square{
+	margin: 30px;
+	@include size(100px);
+	border:5px solid black;
+	@include addons;
+}
+
+.success{
+	@include color(lime);
+}
+
+.warning{
+	@include color(tomato);
+}
