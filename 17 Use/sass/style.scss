@@ -1,37 +1,33 @@
-@use'./colors' as colors;
-@forward
-$bg-color:gold;
+@use './colors' as colors;
+$bg-color: gold;
 
-*{
+* {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
 }
 
-
 body {
-
 	background-color: #333;
 	font-family: sans-serif;
 }
 
-.square{
+.square {
 	margin: 30px;
 	height: 200px;
 	width: 200px;
-	border:5px solid black;
+	border: 5px solid black;
 	border-radius: 25px;
 }
 
-.one{
+.one {
 	background-color: colors.$red;
 }
 
-
-.two{
+.two {
 	background-color: colors.$green;
 }
 
-.three{
+.three {
 	background-color: colors.$blue;
 }
