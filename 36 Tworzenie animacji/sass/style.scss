@@ -1,0 +1,276 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 30px;
+	color: #fff;
+	background-color: #333;
+	overflow: hidden;
+	width: 100vw;
+	height: 100vh;
+}
+
+.sky {
+	position: relative;
+	height: 60vh;
+	background-color: royalblue;
+	animation: sky-color 3s alternate infinite;
+}
+
+.sun {
+	position: absolute;
+	top: 10%;
+	left: 10%;
+	width: 80px;
+	height: 80px;
+	background-color: orange;
+	border-radius: 50%;
+	box-shadow: rgb(255, 255, 255) 0px 0px 70px;
+	animation: sun-set 3s alternate infinite;
+}
+
+.ground {
+	position: relative;
+	height: 49vh;
+	background-color: #333;
+}
+
+.grass {
+	position: absolute;
+	top: 0%;
+	height: 200px;
+	width: 100%;
+	background-color: green;
+}
+
+.road {
+	position: absolute;
+	height: 120px;
+	width: 100%;
+	margin: 30px 0;
+	background-color: #575555;
+}
+
+.line1 {
+	position: absolute;
+	height: 5px;
+	width: 100%;
+	top: 50%;
+	background-color: #fff;
+}
+.line2 {
+	position: absolute;
+	height: 5px;
+	width: 100%;
+	top: 40%;
+	background-color: #fff;
+}
+
+
+// BRĄZOWY
+.car {
+	position: absolute;
+	top: -35px;
+	left: 200px;
+	height: 60px;
+	width: 150px;
+	background-color: #803d3d;
+	border-radius: 15px;
+	animation: driving-car 6s forwards infinite;
+}
+
+.car::before,
+.car::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	width: 40px;
+	height: 35px;
+	background-color: #fff;
+}
+
+.car::after {
+	right: -20px;
+	border-top-right-radius: 10px;
+	background-color: #803d3d;
+}
+
+.car::before {
+	left: -20px;
+	border-top-left-radius: 10px;
+	background-color: #803d3d;
+}
+
+.wheel {
+	position: absolute;
+	bottom: -20px;
+
+	width: 35px;
+	height: 35px;
+	background-color: black;
+	border-radius: 50%;
+	border: 3px dashed white;
+	animation: spining-wheels 0.4s both infinite;
+}
+
+.front-wheel {
+	right: 8px;
+	z-index: 1;
+}
+
+.rear-wheel {
+	left: 8px;
+	z-index: 1;
+}
+
+.window {
+	position: absolute;
+	top: 5px;
+	height: 20px;
+	width: 40px;
+	background-color: #0044fd;
+}
+
+.front-window {
+	right: 0;
+	z-index: 1;
+	border-top-right-radius: 9px;
+}
+
+.rear-window {
+	left: 0;
+	border-top-left-radius: 9px;
+}
+
+
+// FIOLETOWY
+.car2 {
+	position: absolute;
+	top: 35px;
+	right: 200px;
+	height: 60px;
+	width: 150px;
+	background-color: #603d80;
+	border-radius: 15px;
+	animation: driving-car2 6s forwards infinite;
+}
+
+.car2::before,
+.car2::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	width: 40px;
+	height: 35px;
+	background-color: #fff;
+}
+
+.car2::after {
+	right: -20px;
+	border-top-right-radius: 10px;
+	background-color: #603d80;
+}
+
+.car2::before {
+	left: -20px;
+	border-top-left-radius: 10px;
+	background-color: #603d80;
+}
+
+.wheel {
+	position: absolute;
+	bottom: -20px;
+
+	width: 35px;
+	height: 35px;
+	background-color: black;
+	border-radius: 50%;
+	border: 3px dashed white;
+	animation: spining-wheels 0.4s both infinite;
+}
+
+.front-wheel {
+	right: 8px;
+	z-index: 1;
+}
+
+.window {
+	position: absolute;
+	top: 5px;
+	height: 20px;
+	width: 40px;
+	background-color: #0044fd;
+}
+
+.front-window {
+	right: 0;
+	z-index: 1;
+	border-top-right-radius: 9px;
+}
+
+.rear-window {
+	left: 0;
+	border-top-left-radius: 9px;
+}
+
+// KOLOR NIEBA
+@keyframes sky-color {
+	from{
+		background-color: royalblue;
+	}
+
+	to{
+		background-color: rgb(24, 34, 66);
+	}
+
+}
+
+// ZACHÓD SŁOŃCA
+@keyframes sun-set {
+	from{
+		top: 10%;
+	}
+	to{
+		top: 100%;
+	}
+}
+
+// JAZDA FIOLETOWEGO
+@keyframes driving-car2 {
+	from{
+		right: -200px;
+
+	}
+
+	to{
+		right: 120%;
+	}
+
+}
+
+@keyframes driving-car {
+	from{
+		left:-200px;
+
+	}
+
+	to{
+		left: 120%;
+	}
+
+}
+
+// OBRÓT KÓŁ
+@keyframes spining-wheels {
+	from {
+		rotate: 0deg;
+	}
+
+	to {
+		rotate: 360deg;
+	}
+}
