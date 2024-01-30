@@ -1,0 +1,74 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 30px;
+	color: #fff;
+	background-color: #333;
+	overflow: hidden;
+	width: 100vw;
+	height: 100vh;
+}
+
+.square {
+	width: 400px;
+	height: 400px;
+	background-color: gold;
+	border: 3px solid black;
+	animation: color 2s linear 1s 1 alternate;
+}
+
+@keyframes color{
+	0%{
+		height: 400px;
+		background-color: gold;
+	}
+
+	50%{
+		width: 800px;
+		background-color: royalblue;
+	}
+
+	100%{
+		width: 200px;
+		background-color: lime;
+	}
+}
+
+.two{
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+	animation: two 3s linear infinite alternate;
+}
+
+@keyframes two{
+	0%{
+		height: 400px;
+		height: 400px;
+		background-color: #182b3a;
+background-image: linear-gradient(315deg, #182b3a 0%, #20a4f3 74%);
+
+	}
+
+	50%{
+		width: 800px;
+		height: 800px;
+		background-color: #182b3a;
+background-image: linear-gradient(90deg, #182b3a 50%, #20a4f3 100%);
+
+	}
+
+	100%{
+		height: 400px;
+		height: 400px;
+		background-color: #182b3a;
+background-image: linear-gradient(315deg, #182b3a 100%, #20a4f3 74%);
+
+	}
+}
