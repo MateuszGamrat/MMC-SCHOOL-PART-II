@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  color: #fff;
+  background-color: #333;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
+.colors {
+  height: 40vh;
+  background-image: linear-gradient(80deg, tomato, tomato, gold, royalblue, royalblue, lime, lime, royalblue, royalblue, gold, tomato, tomato);
+  background-size: 800%;
+  animation: colors 8s linear infinite;
+}
+
+@keyframes colors {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 0;
+  }
+}
+span {
+  display: block;
+  font-size: 40px;
+  font-weight: bold;
+  margin: 50px auto;
+  text-align: center;
+  animation: flash 0.3s infinite;
+}
+
+.wrapper {
+  margin: 50px;
+  text-align: center;
+  line-height: 10px;
+}
+
+.square {
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+  background-color: #000000;
+  border-radius: 2px;
+  animation: fade 1.4s infinite;
+}
+
+.square:nth-child(2n) {
+  animation: fade 0.2s infinite;
+}
+
+.square:nth-child(3n) {
+  animation: fade 0.3s infinite;
+}
+
+.square:nth-child(4n) {
+  animation: fade 0.6s infinite;
+}
+
+.square:nth-child(5n) {
+  animation: fade 0.7s infinite;
+}
+
+.square:nth-child(6n) {
+  animation: fade 0.8s infinite;
+}
+
+@keyframes fade {
+  10% {
+    opacity: 1;
+    background-color: rgb(145, 216, 112);
+  }
+  50% {
+    opacity: 0;
+    background-color: rgb(68, 68, 68);
+  }
+  100% {
+    opacity: 1;
+    background-color: rgb(142, 216, 112);
+  }
+}
+@keyframes flash {
+  from {
+    color: rgb(142, 216, 112);
+  }
+  to {
+    color: black;
+  }
+}/*# sourceMappingURL=style.css.map */
