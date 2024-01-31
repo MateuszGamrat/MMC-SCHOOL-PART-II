@@ -1,0 +1,52 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 50px;
+	color: #fff;
+	background-color: #333;
+	overflow: hidden;
+	width: 100vw;
+	height: 100vh;
+}
+
+section {
+	display: flex;
+	flex-direction: column;
+	// background-color: #ddd;
+	height: 100vh;
+align-items: center;
+	// justify-content: flex-start;
+	// justify-content: flex-end;
+	// justify-content: center;
+	justify-content: space-between;
+	// justify-content: space-around;
+	// justify-content: space-evenly;
+}
+
+.square {
+	width: 20%;
+	height: 200px;
+	line-height: 200px;
+	text-align: center;
+}
+
+.one {
+	background-color: gold;
+}
+
+.two {
+	background-color: lime;
+}
+
+.three {
+	background-color: royalblue;
+}
+
+.four {
+	background-color: tomato;
+}
