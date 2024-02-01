@@ -1,0 +1,44 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 50px;
+	color: #fff;
+	background-color: #333;
+	overflow: hidden;
+	width: 100vw;
+	height: 100vh;
+	color: #000;
+}
+
+section {
+	display: flex;
+}
+.square {
+	flex-basis: 300px;
+	width: 150px;
+	height: 150px;
+	line-height: 150px;
+	text-align: center;
+}
+
+.one {
+	background-color: gold;
+	flex: 0 1 300px;
+}
+
+.two {
+	background-color: lime;
+}
+
+.three {
+	background-color: royalblue;
+}
+
+.four {
+	background-color: tomato;
+}
