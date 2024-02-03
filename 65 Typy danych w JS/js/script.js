@@ -5,7 +5,7 @@
 // *** TYPY PROSTE ***
 
 // STRING - TEXT
-const name='Mateusz'
+const name = 'Mateusz'
 
 // NUMBER - LICZBY
 const age = 27
@@ -16,7 +16,7 @@ const isTrue = true
 // NULL & UNDEFINED
 const test = null
 const test2 = 12
-console.log(test);
-console.log(test2);
+console.log(test)
+console.log(test2)
 
 console.log(`Hej ${name}, ile to tych ${age} lat`)
