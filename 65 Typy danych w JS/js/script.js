@@ -15,6 +15,8 @@ const isTrue = true
 
 // NULL & UNDEFINED
 const test = null
-let test2
-console.log(test1)
-console.log(test2)
+const test2 = 12
+console.log(test);
+console.log(test2);
+
+console.log(`Hej ${name}, ile to tych ${age} lat`)
