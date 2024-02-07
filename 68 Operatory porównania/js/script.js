@@ -1,7 +1,6 @@
 const x = 8
-const y ="8"
+const y = '8'
 const z = 9
-
 
 /*
     == sprawdzamy czy coś jest RÓWNE (sama wartość)
@@ -18,8 +17,8 @@ const z = 9
 
 */
 
-if(x  y){
-    console.log("true")
-}else{
-    console.log("folse");
+if (x == y) {
+	console.log('true')
+} else {
+	console.log('folse')
 }
