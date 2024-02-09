@@ -19,3 +19,4 @@ if (numbers.length > 5) {
 
 console.log(`Tablica z cyframi ma ${numbers.length} elementów`)
 
+
