@@ -1,0 +1,63 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-family: 'Montserrat', sans-serif;
+	background-color: #333;
+}
+
+body {
+	height: 100vh;
+}
+
+button {
+	padding: 10px 20px;
+	background: none;
+	border: 1px solid white;
+	color: #fff;
+	font-size: 24px;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+.btn2 {
+	margin-left: 30px;
+}
+
+.color {
+	margin: 50px auto;
+	width: 300px;
+	height: 300px;
+	background-color: gold;
+}
+
+.remove-color {
+	background-color: gold;
+	width: 90%;
+	color: #000;
+}
+
+.blue {
+	background-color: royalblue;
+}
+.red {
+	background-color: tomato;
+	animation: rotate 1s  linear;
+}
+
+@keyframes rotate {
+	from {
+		rotate: 0deg;
+	}
+
+	to {
+		rotate: 360deg;
+	}
+}
